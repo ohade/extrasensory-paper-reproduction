@@ -1,0 +1,18 @@
+.DS_Store
+.venv/
+.pytest_cache/
+.ruff_cache/
+__pycache__/
+*.py[cod]
+
+# Downloaded/derived data. Small official reference artifacts remain tracked.
+data/raw/
+data/processed/
+
+# Re-creatable fitted estimators can be large.
+models/
+
+# Re-creatable research artifacts. Compact ledgers, summaries, and figures stay tracked.
+results/research/artifacts/
+results/research/runs/*/checkpoints/
+results/research/runs/*/predictions.*

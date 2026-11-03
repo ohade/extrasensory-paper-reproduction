@@ -1,0 +1,6 @@
+variant,macro_balanced_accuracy,delta_vs_default_tcn,macro_ece,user_macro_class_recall_p20,elapsed_seconds,run_id
+Causal TCN,0.7818687736,0.0000000000,0.0757620424,0.7667668883,134.2880576250,causal-tcn-local-screening-base-b08c24a2d043-development
+No label refinement,0.7818343134,-0.0000344602,0.0757754330,0.7665906464,136.4823885830,ablation-causal_tcn_no_label_refinement-1158d5f0ac77-development
+Short history (5 minutes),0.7738242252,-0.0080445484,0.0885339718,0.7634377364,89.2557170830,ablation-causal_tcn_short_history-a249de717878-development
+GroupDRO,0.7850228665,0.0031540929,0.0843972138,0.7533317795,157.5302376670,ablation-causal_tcn_group_dro-99da4b3e188f-development
+Asymmetric loss,0.7664846950,-0.0153840786,0.1226457836,0.7457928839,131.3881175420,causal-tcn-local-trial-00-asymmetric_gamma_negative-5d61218ae2e3-development

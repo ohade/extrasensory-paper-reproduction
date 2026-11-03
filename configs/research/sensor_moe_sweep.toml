@@ -1,0 +1,21 @@
+[sweep]
+name = "sensor-moe-local"
+base_config = "configs/research/sensor_moe_tcn.toml"
+baseline_config = "configs/research/causal_tcn.toml"
+max_trials = 20
+budget_hours = 12
+minimum_improvement = 0.002
+maximum_ece_regression = 0.01
+maximum_user_p20_regression = 0.005
+promotion_improvement = 0.003
+screening_epochs = 3
+final_epochs = 12
+requires_sweep = "causal-tcn-local"
+minimum_prerequisite_improvement = 0.003
+
+[space]
+hidden_dim = [64, 128]
+dropout = [0.1, 0.2, 0.3]
+label_rank = [0, 4, 8]
+sensor_dropout = [0.1, 0.2, 0.3]
+learning_rate = [0.0005, 0.001]

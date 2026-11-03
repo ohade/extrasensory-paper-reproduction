@@ -1,0 +1,17 @@
+[experiment]
+name = "causal-tcn-noise-aware"
+model = "causal_tcn"
+seed = 2017
+label_policy = "exclude-missing"
+history_steps = 30
+max_gap_seconds = 90
+hidden_dim = 128
+dropout = 0.2
+label_rank = 8
+batch_size = 256
+epochs = 12
+patience = 3
+learning_rate = 0.001
+weight_decay = 0.0001
+asymmetric_gamma_negative = 2.0
+max_workers = 4

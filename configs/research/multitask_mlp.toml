@@ -1,0 +1,15 @@
+[experiment]
+name = "multitask-mlp"
+model = "multitask_mlp"
+seed = 2017
+label_policy = "legacy-negative"
+history_steps = 1
+hidden_dim = 128
+dropout = 0.2
+label_rank = 0
+batch_size = 512
+epochs = 12
+patience = 3
+learning_rate = 0.001
+weight_decay = 0.0001
+max_workers = 4

@@ -1,0 +1,23 @@
+[sweep]
+name = "causal-tcn-local"
+base_config = "configs/research/causal_tcn.toml"
+baseline_config = "configs/research/threshold_lr.toml"
+max_trials = 30
+budget_hours = 12
+minimum_improvement = 0.002
+maximum_ece_regression = 0.01
+maximum_user_p20_regression = 0.005
+promotion_improvement = 0.003
+screening_epochs = 3
+final_epochs = 12
+evaluate_official_baseline = false
+
+[space]
+history_steps = [5, 15, 30]
+hidden_dim = [64, 128]
+dropout = [0.1, 0.2, 0.3]
+label_rank = [0, 4, 8]
+learning_rate = [0.0005, 0.001]
+weight_decay = [0.0001, 0.001]
+group_dro_eta = [0.0, 0.01]
+asymmetric_gamma_negative = [0.0, 2.0]

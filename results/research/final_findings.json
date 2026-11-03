@@ -1,0 +1,45 @@
+{
+  "bootstrap": {
+    "replicates": 2000,
+    "scope": "sealed audit fold 3",
+    "seed": 2017,
+    "unit": "user"
+  },
+  "gates": {
+    "audit_delta": 0.015922848083516405,
+    "audit_ece_delta": -0.04698121673772142,
+    "audit_user_p20_delta": 0.02333147355104881,
+    "promotion_delta": 0.011393107899421273
+  },
+  "moe_development_only": {
+    "average_missing_sensor_degradation": 0.026611695936350155,
+    "delta_vs_causal_tcn": 0.01338665912788417,
+    "macro_balanced_accuracy": 0.7952554327261255,
+    "protocol_note": "Development-only: no second promotion attempt was made after the TCN consumed fold 4.",
+    "relative_degradation_reduction": 0.10321978445982233,
+    "ssl_gate_passed": false,
+    "ssl_gate_required_reduction": 0.2,
+    "tcn_average_missing_sensor_degradation": 0.029674713464012514
+  },
+  "paired_audit_finding": {
+    "baseline": "Threshold-tuned logistic regression",
+    "baseline_macro_balanced_accuracy": 0.774415957380537,
+    "candidate": "Causal TCN",
+    "candidate_macro_balanced_accuracy": 0.7903388054640534,
+    "delta": 0.015922848083516405,
+    "user_cluster_bootstrap_95_ci": [
+      -0.008487751349302287,
+      0.03719627034296439
+    ]
+  },
+  "primary_finding": {
+    "baseline": "Paper logistic regression reproduction",
+    "candidate": "Causal TCN",
+    "comparison_note": "The tracked paper reproduction retained metrics but not row-level probabilities, so a paired official confidence interval cannot be computed without refitting it.",
+    "execution_note": "A threshold-tuned five-fold refit was terminated after a rare-label liblinear job exceeded four hours. No output from that attempt is used in the report.",
+    "official_baseline_macro_balanced_accuracy": 0.7682709218804069,
+    "official_candidate_macro_balanced_accuracy": 0.7978647543811829,
+    "official_confidence_interval": null,
+    "official_delta": 0.029593832500775963
+  }
+}

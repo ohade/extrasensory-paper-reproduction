@@ -1,0 +1,43 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "extrasensory-paper-reproduction"
+version = "0.1.0"
+description = "Reproduction of Vaizman, Ellis, and Lanckriet's ExtraSensory context-recognition baseline."
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "joblib>=1.4,<2",
+  "jupyter>=1.1,<2",
+  "matplotlib>=3.9,<4",
+  "nbclient>=0.10,<1",
+  "nbformat>=5.10,<6",
+  "numpy>=2.1,<3",
+  "pandas>=2.2,<3",
+  "pyarrow>=18,<24",
+  "scikit-learn>=1.5,<2",
+  "seaborn>=0.13,<1",
+  "torch>=2.6,<3",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.3,<9",
+  "ruff>=0.9,<1",
+]
+
+[project.scripts]
+extrasensory-reproduce = "extrasensory_reproduction.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/extrasensory_reproduction"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+extend-exclude = ["paper/official_dataset_tutorial.ipynb"]
+line-length = 100
+target-version = "py311"

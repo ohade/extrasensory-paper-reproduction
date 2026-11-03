@@ -1,0 +1,58 @@
+{
+  "c_grid": [
+    0.001,
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0
+  ],
+  "completed_at_utc": "2026-07-27T11:07:34.638473+00:00",
+  "folds": "official cv5Folds.zip",
+  "label_policy": "legacy-negative",
+  "labels": [
+    "LYING_DOWN",
+    "SITTING",
+    "FIX_walking",
+    "FIX_running",
+    "BICYCLING",
+    "SLEEPING",
+    "LAB_WORK",
+    "IN_CLASS",
+    "IN_A_MEETING",
+    "LOC_main_workplace",
+    "OR_indoors",
+    "OR_outside",
+    "IN_A_CAR",
+    "ON_A_BUS",
+    "DRIVE_-_I_M_THE_DRIVER",
+    "DRIVE_-_I_M_A_PASSENGER",
+    "LOC_home",
+    "FIX_restaurant",
+    "PHONE_IN_POCKET",
+    "OR_exercise",
+    "COOKING",
+    "SHOPPING",
+    "STROLLING",
+    "DRINKING__ALCOHOL_",
+    "BATHING_-_SHOWER"
+  ],
+  "jobs": 4,
+  "max_iter": 1000,
+  "models": [
+    "EF"
+  ],
+  "numpy": "2.5.1",
+  "pandas": "2.3.3",
+  "paper_label_reconstruction": [
+    "OR_indoors",
+    "OR_outside",
+    "PHONE_IN_POCKET"
+  ],
+  "platform": "macOS-26.5.1-arm64-arm-64bit",
+  "python": "3.12.12 (main, Dec 17 2025, 21:07:08) [Clang 21.1.4 ]",
+  "scikit_learn": "1.9.0",
+  "seed": 2017,
+  "solver": "liblinear",
+  "test_subset": "all six paper sensor groups complete"
+}

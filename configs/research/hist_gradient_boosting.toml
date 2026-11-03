@@ -1,0 +1,6 @@
+[experiment]
+name = "hist-gradient-boosting"
+model = "hist_gradient_boosting"
+seed = 2017
+label_policy = "legacy-negative"
+max_workers = 4

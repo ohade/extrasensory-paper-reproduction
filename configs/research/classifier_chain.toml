@@ -1,0 +1,6 @@
+[experiment]
+name = "classifier-chain"
+model = "classifier_chain"
+seed = 2017
+label_policy = "legacy-negative"
+max_workers = 4

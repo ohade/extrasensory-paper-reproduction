@@ -1,0 +1,6 @@
+[experiment]
+name = "threshold-lr"
+model = "threshold_lr"
+seed = 2017
+label_policy = "legacy-negative"
+max_workers = 4

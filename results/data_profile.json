@@ -1,0 +1,146 @@
+{
+  "additional_unlabeled_examples": 69026,
+  "core_complete_examples": 176941,
+  "core_complete_users": 51,
+  "core_features": 175,
+  "duplicate_user_timestamps": 0,
+  "examples": 377346,
+  "folds": [
+    {
+      "core_test_examples": 28726,
+      "core_test_users": 12,
+      "fold": 0,
+      "test_users": 12,
+      "train_users": 48
+    },
+    {
+      "core_test_examples": 34947,
+      "core_test_users": 10,
+      "fold": 1,
+      "test_users": 12,
+      "train_users": 48
+    },
+    {
+      "core_test_examples": 53855,
+      "core_test_users": 10,
+      "fold": 2,
+      "test_users": 12,
+      "train_users": 48
+    },
+    {
+      "core_test_examples": 41550,
+      "core_test_users": 12,
+      "fold": 3,
+      "test_users": 12,
+      "train_users": 48
+    },
+    {
+      "core_test_examples": 17863,
+      "core_test_users": 7,
+      "fold": 4,
+      "test_users": 12,
+      "train_users": 48
+    }
+  ],
+  "label_missing_rate": {
+    "AT_A_BAR": 0.8922548002075765,
+    "AT_A_PARTY": 0.8230312662169175,
+    "AT_SCHOOL": 0.15943175921120914,
+    "AT_THE_GYM": 0.8560164763881681,
+    "BATHING_-_SHOWER": 0.3476907109496627,
+    "BICYCLING": 0.5615496886351842,
+    "CLEANING": 0.4829398028022833,
+    "COMPUTER_WORK": 0.22950505967825635,
+    "COOKING": 0.32101063829787235,
+    "DOING_LAUNDRY": 0.760080435910742,
+    "DRESSING": 0.32567462376751427,
+    "DRINKING__ALCOHOL_": 0.770423585884795,
+    "DRIVE_-_I_M_A_PASSENGER": 0.5748345874416191,
+    "DRIVE_-_I_M_THE_DRIVER": 0.47371562013492474,
+    "EATING": 0.03839841722885314,
+    "ELEVATOR": 0.7690840685002595,
+    "FIX_restaurant": 0.4889011416709912,
+    "FIX_running": 0.5431045666839647,
+    "FIX_walking": 0.005598079916969382,
+    "GROOMING": 0.3552153606642449,
+    "IN_A_CAR": 0.43339387649195643,
+    "IN_A_MEETING": 0.25008757135443693,
+    "IN_CLASS": 0.6462668655941879,
+    "LAB_WORK": 0.839793072132849,
+    "LOC_beach": 0.8455371043072133,
+    "LOC_home": 0.04490464452516866,
+    "LOC_main_workplace": 0.4559743124026985,
+    "LYING_DOWN": 0.014909833938764919,
+    "ON_A_BUS": 0.45176440062272966,
+    "OR_exercise": 0.21887324857291127,
+    "OR_indoors": 0.3616826673585885,
+    "OR_outside": 0.5086338868707836,
+    "OR_standing": 0.005598079916969382,
+    "PHONE_IN_BAG": 0.7001102750389206,
+    "PHONE_IN_HAND": 0.54040282823041,
+    "PHONE_IN_POCKET": 0.5642060197197717,
+    "PHONE_ON_TABLE": 0.4731999221587961,
+    "SHOPPING": 0.5498410742086144,
+    "SINGING": 0.9185359366891541,
+    "SITTING": 0.005598079916969382,
+    "SLEEPING": 0.07476647638816813,
+    "STAIRS_-_GOING_DOWN": 0.6937759470679813,
+    "STAIRS_-_GOING_UP": 0.693081862999481,
+    "STROLLING": 0.8256324597820446,
+    "SURFING_THE_INTERNET": 0.3750551375194603,
+    "TALKING": 0.09332511676180591,
+    "TOILET": 0.28557018681888946,
+    "WASHING_DISHES": 0.5573624805396991,
+    "WATCHING_TV": 0.36315516346652826,
+    "WITH_CO-WORKERS": 0.6365334717176959,
+    "WITH_FRIENDS": 0.46349896211728076
+  },
+  "labels": 51,
+  "paper_label_reconstruction": [
+    "OR_indoors",
+    "OR_outside",
+    "PHONE_IN_POCKET"
+  ],
+  "paper_labeled_examples": 308320,
+  "sensor_coverage": {
+    "Acc": {
+      "available_examples": 308306,
+      "available_users": 60,
+      "features": 26,
+      "missing_rate": 4.540736896729847e-05
+    },
+    "Aud": {
+      "available_examples": 302177,
+      "available_users": 60,
+      "features": 26,
+      "missing_rate": 0.019924104826154698
+    },
+    "Gyro": {
+      "available_examples": 291883,
+      "available_users": 57,
+      "features": 26,
+      "missing_rate": 0.05331149455111572
+    },
+    "Loc": {
+      "available_examples": 273737,
+      "available_users": 58,
+      "features": 17,
+      "missing_rate": 0.11216593149974052
+    },
+    "PS": {
+      "available_examples": 308320,
+      "available_users": 60,
+      "features": 34,
+      "missing_rate": 0.0
+    },
+    "WAcc": {
+      "available_examples": 210716,
+      "available_users": 56,
+      "features": 46,
+      "missing_rate": 0.31656720290607165
+    }
+  },
+  "timestamp_max_utc": "2016-06-02T20:17:27+00:00",
+  "timestamp_min_utc": "2015-06-05T20:49:01+00:00",
+  "users": 60
+}

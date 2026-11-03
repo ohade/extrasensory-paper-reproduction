@@ -1,0 +1,12 @@
+model,stage,evidence_scope,status,macro_balanced_accuracy,macro_ece,user_macro_class_recall_p20,elapsed_seconds,protocol_note,run_id
+Paper logistic regression reproduction,official,official five-fold paper protocol,executed,0.7682709219,,,,Existing reproduction; calibration outputs not retained.,paper-ef-reproduction
+Threshold-tuned logistic regression,development,development folds 0-2,executed,0.7493781951,0.1055010268,0.7343428894,630.3300137500,,threshold-lr-e742b8d6be2f-development
+Multi-task MLP,development,development folds 0-2,executed,0.7882334711,0.1136249164,0.7601811146,55.9131355000,,multitask-mlp-ba20c38950cd-development
+Causal TCN,development,development folds 0-2,executed,0.7818687736,0.0757620424,0.7667668883,134.2880576250,,causal-tcn-local-screening-base-b08c24a2d043-development
+Sensor-gated mixture of experts,development,development folds 0-2,executed,0.7952554327,0.0917034369,0.7619866054,180.8578619160,Promising development-only result; not promoted because the TCN had already consumed the single promotion fold.,sensor-moe-local-screening-base-9db1dab3b289-development
+Classifier chain,development,development folds 0-2,executed,0.6649501442,0.0749624201,0.7292762687,772.4481028340,,classifier-chain-6a6b01b90757-development
+Causal TCN,promotion,held-out promotion fold 4,executed,0.7503520578,0.0851576531,0.7202476482,48.5190039580,,causal-tcn-local-champion-17a409ce84d2-promotion
+Threshold-tuned logistic regression,promotion,held-out promotion fold 4,executed,0.7389589499,0.1563724786,0.6897434344,260.7544480000,,threshold-lr-e742b8d6be2f-promotion
+Causal TCN,audit,sealed audit fold 3,executed,0.7903388055,0.0697160507,0.7673266569,70.1900710000,,causal-tcn-local-champion-17a409ce84d2-audit
+Threshold-tuned logistic regression,audit,sealed audit fold 3,executed,0.7744159574,0.1166972675,0.7439951834,363.8571652080,,threshold-lr-e742b8d6be2f-audit
+Causal TCN,official,official five-fold evaluation,executed,0.7978647544,0.0772390112,0.7638523911,333.6335044160,,causal-tcn-local-champion-17a409ce84d2-official

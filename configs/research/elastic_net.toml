@@ -1,0 +1,6 @@
+[experiment]
+name = "elastic-net"
+model = "elastic_net"
+seed = 2017
+label_policy = "legacy-negative"
+max_workers = 4

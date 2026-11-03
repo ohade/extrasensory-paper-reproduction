@@ -1,0 +1,28 @@
+model,stage,missing_sensor_group,clean_macro_balanced_accuracy,ablated_macro_balanced_accuracy,degradation
+Causal TCN,development,Acc,0.7818687736,0.7755045668,0.0063642068
+Causal TCN,development,Acc+Gyro,0.7818687736,0.7655646539,0.0163041197
+Causal TCN,development,Aud,0.7818687736,0.7357834648,0.0460853088
+Causal TCN,development,Aud+PS,0.7818687736,0.7048341618,0.0770346118
+Causal TCN,development,Gyro,0.7818687736,0.7738841620,0.0079846116
+Causal TCN,development,Loc,0.7818687736,0.7636644259,0.0182043477
+Causal TCN,development,PS,0.7818687736,0.7548360591,0.0270327144
+Causal TCN,development,WAcc,0.7818687736,0.7567697655,0.0250990081
+Causal TCN,development,WAcc+Loc,0.7818687736,0.7389052813,0.0429634923
+Sensor-gated mixture of experts,development,Acc,0.7952554327,0.7948486121,0.0004068207
+Sensor-gated mixture of experts,development,Acc+Gyro,0.7952554327,0.7800374425,0.0152179902
+Sensor-gated mixture of experts,development,Aud,0.7952554327,0.7556375351,0.0396178976
+Sensor-gated mixture of experts,development,Aud+PS,0.7952554327,0.7272762691,0.0679791636
+Sensor-gated mixture of experts,development,Gyro,0.7952554327,0.7950219205,0.0002335123
+Sensor-gated mixture of experts,development,Loc,0.7952554327,0.7735678217,0.0216876111
+Sensor-gated mixture of experts,development,PS,0.7952554327,0.7717093941,0.0235460386
+Sensor-gated mixture of experts,development,WAcc,0.7952554327,0.7739242545,0.0213311782
+Sensor-gated mixture of experts,development,WAcc+Loc,0.7952554327,0.7457703815,0.0494850512
+Causal TCN,official,Acc,0.7978647544,0.7919897946,0.0058749598
+Causal TCN,official,Acc+Gyro,0.7978647544,0.7808076570,0.0170570974
+Causal TCN,official,Aud,0.7978647544,0.7551952090,0.0426695454
+Causal TCN,official,Aud+PS,0.7978647544,0.7133151869,0.0845495675
+Causal TCN,official,Gyro,0.7978647544,0.7892999761,0.0085647783
+Causal TCN,official,Loc,0.7978647544,0.7749540697,0.0229106847
+Causal TCN,official,PS,0.7978647544,0.7688115270,0.0290532274
+Causal TCN,official,WAcc,0.7978647544,0.7614974840,0.0363672704
+Causal TCN,official,WAcc+Loc,0.7978647544,0.7352257524,0.0626390020

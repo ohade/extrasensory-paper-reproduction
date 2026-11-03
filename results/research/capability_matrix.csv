@@ -1,0 +1,15 @@
+method,implemented,full_experiment_executed,evidence
+Paper logistic regression,True,True,official
+Threshold-tuned logistic regression,True,True,"development, promotion, sealed audit"
+Elastic-net logistic regression,True,False,not run: compute budget
+Histogram gradient boosting,True,False,not run: compute budget
+Classifier chain,True,True,development
+Multi-task MLP,True,True,development
+Causal TCN,True,True,official
+GroupDRO,True,True,development ablation
+Asymmetric loss,True,True,development ablation
+Sensor-gated mixture of experts,True,True,development
+Reconstruction pretraining,True,True,smoke test only; gate blocked
+Soft probability averaging,True,False,implementation verified by tests
+Hard majority voting,True,False,implementation verified by tests
+Leakage-safe OOF stacking,True,False,implementation verified by tests
